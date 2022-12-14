@@ -1,0 +1,337 @@
+/* GoogleFonts Icon */
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+/********** 全体 **********/
+
+.for_sp {display: none;}
+.for_pc {display: initial;}
+
+body, html {
+    background-color: #EEF9D2;
+    color: #4E483D;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.contents-wrapper {
+    background-color: #FFF;
+    max-width: 1080px;
+    min-height: 100vh;
+    padding-bottom: 207.094px; /* フッターの高さ */
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/********** ヘッダー **********/
+
+header {
+    background-color: #FFF;
+    width: 100%;
+    max-width: 1080px;
+    height: 70px;
+    padding-right: 2%;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+header h1 {
+    background-color: #FFF;
+    border-bottom-right-radius: 15px;
+    padding: 8px 2% 15px 2%;
+    float: left;
+}
+
+header h1 a {
+    display: block;
+}
+
+header h1 img {
+    height: 60px;
+    display: block;
+}
+
+/* スクロール時のみ */
+
+header.scroll {
+    border-bottom: 1px solid #8AC193;
+}
+
+header.scroll h1 {
+    padding: 7px 2% 8px 2%;
+    border-bottom: 1px solid #8AC193;
+    border-radius: 0;
+}
+
+header.scroll h1 img {
+    height: 54px;
+}
+
+
+/********** メイン画像 **********/
+
+.main-image {
+    width: 100%;
+    height: 350px;
+    background: url(../images/main_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/********** ナビゲーション **********/
+
+nav {
+    width: 100%;
+    transform: translateY(-20px);
+    z-index: 2;
+}
+
+nav ul {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+    position: relative;
+}
+
+nav ul li:not(:last-of-type) {
+    border-right: 1px solid #FFF;
+}
+
+nav ul li a {
+    background-color: #53BF49;
+    color: #FFF;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    position: relative;
+    transition: background-color 0.2s ease 0s;
+}
+
+nav ul li a:hover {
+    background-color: #75cc6d;
+}
+
+nav ul li:first-of-type a { border-radius: 8px 0 0 8px; }
+nav ul li:last-of-type  a { border-radius: 0 8px 8px 0; }
+
+nav ul li a p {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/********** フッター **********/
+
+footer {
+    /* 位置調整 */
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    
+    /* 任意のスタイル */
+    color: #CCC;
+    border-top: 1px solid #CCC;
+}
+
+/* コピーライト */
+
+footer small {
+    font-size: 12px;
+    padding: 14px 2%;
+    margin: 0;
+    display: inline-block;
+}
+
+footer small .copy {
+    font-size: 1.3rem;
+    transform: translateY(0.2rem);
+    display: inline-block;
+}
+
+/* TOPへ戻るボタン */
+
+footer button {
+    background-color: #ECF4FF;
+    color: #7DA8D0;
+    width: 70px;
+    height: 100%;
+    opacity: 0.8;
+    position: relative;
+    float: right;
+    transition: background-color 0.3s ease 0s, 
+                color 0.3s ease 0s;
+}
+
+footer button:hover {
+    color: #ECF4FF;
+    background-color: #7DA8D0;
+}
+
+footer button::before {
+    content: '\f106';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer button::after {
+    content: 'TOP';
+    font-size: 14px;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/********** clearfix **********/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/********** ▽ これ以下レスポンシブ対応 **********/
+
+/* 1081px以上 (背景色あり) */
+
+@media (min-width: 1081px) {
+    
+    .contents-wrapper {
+        border-left: 1px solid #EEE;
+        border-right: 1px solid #EEE;
+    }
+    
+    header {
+        width: calc(100% - 2px);
+        max-width: 1078px;
+    }
+}
+
+/* 599px以下 (スマホ) */
+
+@media (max-width: 599px){
+    
+    /********** 全体 **********/
+    
+    .for_sp {display: initial;}
+    .for_pc {display: none;}
+    
+    body, html {
+        font-size: 16px;
+    }
+    
+    .contents-wrapper {
+        padding-bottom: 14vw; /* フッターの高さ */
+    }
+
+    
+    /********** ヘッダー **********/
+
+    header {
+        width: 100%;
+        height: 16vw;
+        padding: 1.5vw 2vw;
+        border-bottom: 1px solid #8AC193;
+    }
+    header h1 {
+        padding: 0;
+        border-radius: 0;
+    }
+    header h1 img {
+        height: 12.5vw;
+    }
+    
+    
+    /********** メイン画像 **********/
+    
+    .main-image {
+        height: 67vw;
+    }
+    
+    
+    /********** ナビゲーション **********/
+    
+    nav {
+        width: 100%;
+        position: fixed;
+        bottom: -20px;
+    }
+    
+    nav ul {
+        width: 100%;
+    }
+    
+    nav ul li {
+        border-radius: 0;
+        flex: 1;
+    }
+    
+    nav ul li:first-of-type a, nav ul li:last-of-type a {
+        border-radius: 0; 
+    }
+    
+    nav ul li a {
+        font-size: 4vw;
+        height: 16vw;
+    }
+    
+    nav ul li a p {
+        padding: 0;
+    }
+    
+    
+    /********** フッター **********/
+    
+    footer {
+        height: 14vw;
+        margin-bottom: 16vw;
+        left: 0;
+    }
+    
+    footer small {
+        font-size: 2.8vw;
+        padding: 3.5vw;
+    }
+    
+    footer button {
+        width: 16vw;
+    }
+    
+    footer button::before {
+        font-size: 6vw;
+    }
+    
+    footer button::after {
+        font-size: 3.5vw;
+    }
+}

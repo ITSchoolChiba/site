@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>就労移行ITスクール</title>
+
+    <link rel="icon" href="images/icon/favicon.ico" sizes="any">
+    <link rel="icon" href="images/icon/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/destyle.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://kit.fontawesome.com/96a13211e2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            checkRadiobtn();
+        });
+    </script>
+</head>
+<body>
+    <div class="contents-wrapper">
+        <header class="clearfix">
+            <h1>
+                <a href="index.html"><img src="images/logo_line.jpg" alt=""></a>
+            </h1>
+        </header>
+        <div class="main-image"></div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><p>ホーム</p></a>
+                </li>
+                <li>
+                    <a href="user.html"><p>利用者用ページ</p></a>
+                </li>
+                <li>
+                    <a href="trial.html"><p>体験・見学者用</p></a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+           <div class="attention">
+           	<div class="notification">
+           		<h2>お知らせ</h2>
+				<div style="text-align:center;">
+					<img width="40%" src="file/イベント/クリスマスのお知らせ（千葉）.png">
+					<img width="40%" src="file/イベント/クリスマスのお知らせ（柏）.png">
+				</div>
+				<p>12/09 利用者ページに講座資料のコーナーを追加しました。</p>
+				<p>12/09 ページのデザインを変更しました。基本的な機能は変更しておりません。</p>
+				<p>12/08 クリスマス会のお知らせを更新しました。</p>
+           </div>
+                <h2>利用者の方へ ルーツからのお願い</h2>
+                <div class="contents">
+                    <ul class="items">
+                        <li>
+                            <p>一日の終了時に振り返りシートの送信をお願いします。</p>
+                            <div class="after-note">
+                                <a href="form.php" target="_blank">振り返りシートの入力・送信はこちらから</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p>途中、困ったことがございましたら、お気軽にお声かけください。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="study-contents">
+                <h2>コンテンツ</h2>
+
+                <div class="flex-container">
+                    <div id="menu">
+                        <h3>目次</h3>
+                        <input id="contents01" type="radio" value="1" name="tab_radio" checked>
+                        <label for="contents01">各種フォーム</label>
+                        <input id="contents02" type="radio" value="2" name="tab_radio">
+                        <label for="contents02">出席予定表</label>
+                        <input id="contents03" type="radio" value="3" name="tab_radio">
+                        <label for="contents03">講座資料</label>
+                        <input id="contents04" type="radio" value="4" name="tab_radio">
+                        <label for="contents04">就労移行ITスクール千葉・柏共有github</label>
+                        <input id="contents05" type="radio" value="5" name="tab_radio">
+                        <label for="contents05">基本情報技術者試験関連</label>
+                        <input id="contents06" type="radio" value="6" name="tab_radio">
+                        <label for="contents06">HTMLとCSS</label>
+                        <input id="contents07" type="radio" value="7" name="tab_radio">
+                        <label for="contents07">プログラミングで人生の<br>可能性を広げよう</label>
+                        <input id="contents08" type="radio" value="8" name="tab_radio">
+                        <label for="contents08">テレワークに備えて</label>
+                        <input id="contents09" type="radio" value="9" name="tab_radio">
+                        <label for="contents09">IT関連の資格</label>
+                        <input id="contents10" type="radio" value="10" name="tab_radio">
+                        <label for="contents10">上級編</label>
+                        <input id="contents11" type="radio" value="11" name="tab_radio">
+                        <label for="contents11">就活編<br>履歴書・職務経歴書</label>
+                        <input id="contents12" type="radio" value="12" name="tab_radio">
+                        <label for="contents12">在宅支援をご利用の方へ</label>
+                    </div>
+
+                    <div class="main-contents">
+                        <!-------------------- 各種フォーム -------------------->
+                        <section class="form">
+                            <h3>各種フォーム</h3>
+                            <div class="contents">
+                                <div class="content01">
+                                    <div class="container">
+										<ul>
+											<li><a href="form.php" target="_blank">振り返りシート</a></li>
+												<p>　毎日、15時までに提出をお願いいたします。</p>
+											<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqpPm5JxhwciZ04dMWpYwmzY0qJ876mUpnsS5CIsdc7ZV8RA/viewform?usp=sf_link" target="_blank">面談アンケート</a></li>
+												<p>　毎週、自身の学習面談までに提出をお願いいたします。</p>
+											<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeo9ke9m52BP49ig2zvAqWpj4sSBLd_gOfAL08zJ3aMo9CFsA/viewform?usp=sf_link" target="_blank">講座の感想</a></li>
+												<p>　講座後、よろしければ一言感想をお願いします！提出は任意です。</p>
+										</ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-------------------- 出席予定表 -------------------->
+                        <section class="schedule">
+                            <h3>出席予定表</h3>
+                            <div class="contents">
+                                <div class="content01">
+                                    <div class="container">
+										<p>毎月、20日までに提出をお願いいたします。<br>
+											Excelファイルをダウンロードの上予定を記入し、送信先メールアドレスに送信してください。<br>
+											※事業所によってファイル、送信先が異なるためご注意ください。<br><br>
+											■千葉<br>
+											　・予定表Excelファイル　<a href="file/予定表/12月出席表（千葉）.xlsx" target="_blank">12月出席表（千葉）</a><br>
+											　・送信先メールアドレス　haupu.rootschiba@gmail.com<br>
+											■柏<br>
+											　・予定表Excelファイル　<a href="file/予定表/12月出席表（柏）.xlsx" target="_blank">12月出席表（柏）</a><br>
+											　・送信先メールアドレス　haupu.rootskashiwa@gmail.com
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-------------------- 講座資料 -------------------->
+                        <section class="github">
+                            <h3>講座資料</h3>
+                            <div class="contents">
+                                <div class="content01">
+                        	        <h4>講座資料一覧</h4>
+                                    <div class="container">
+										<ul>
+											<li>12/07　<a href="file/講座資料/エンジニア職種・主要言語一覧.pdf" target="_blank">エンジニア職種一覧（山本）</a>（随時更新予定）</li>
+											<li>11/22　<a href="file/講座資料/11_22_面接対策講座.pdf" target="_blank">面接対策講座（福徳）</a></li>
+											<li>11/16　<a href="file/講座資料/インターネット検索_問題用紙 (1).pdf" target="_blank">検索力について（山本）</a></li>
+											<li>11/08　<a href="file/講座資料/11_8_自己紹介と面接の心得講座.pdf" target="_blank">面接の心得講座（福徳）</a></li>
+										</ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-------------------- 就労移行ITスクール千葉・柏共有github -------------------->
+                        <section class="github">
+                            <h3>就労移行ITスクール千葉・柏共有github</h3>
+                            <div class="contents">
+                                <div class="content01">
+                                    <div class="container">
+										<p>就労移行ITスクール千葉・柏github共用リポジトリは<a href="https://github.com/ITSchoolChiba/test.git" target="_blank">こちら</a><br>
+											（初めての方はLINEよりgithubアカウント名をお知らせください）
+										</p>
+										<p>githubの使い方が分からない方は<a href="./file/GitHub使用方法_ver2.pdf" target="_blank">こちら</a></p><br>
+										<p class="bold">※githubとは？<br></p>
+										<p>
+											　githubは世界中の人々がプログラムコードやデザインデータを保存・公開できるソースコード管理サービスのことです。<br>
+											　当事業所では皆様が書いたコードを集約し、お互いに参考にしたり、やり取りができるよう使っていければと思います！<br>
+											　あまりプログラムに詳しくない方でも、お気軽にご参加ください！！<br>
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-------------------- 基本情報技術者試験関連 -------------------->
+                        <section class="github">
+                            <h3>基本情報技術者試験関連</h3>
+                            <div class="contents">
+                                <div class="content01">
+                        	        <h4>スライドファイル一覧</h4>
+                                    <div class="container">
+										<ul>
+											<li><a href="./file/kihon_jouho/基本情報技術者スケジュール.xlsx" target="_blank">基本情報技術者スケジュール</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者Chapter1.pdf" target="_blank">基本情報技術者Chapter1</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者Chapter2.pdf" target="_blank">基本情報技術者Chapter2</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者-Chapter3ReMaster.pdf" target="_blank">基本情報技術者Chapter3</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者-Chapter4ver.2.pdf" target="_blank">基本情報技術者Chapter4</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者Chapter5.pdf" target="_blank">基本情報技術者Chapter5</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者Chapter6.pdf" target="_blank">基本情報技術者Chapter6</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者Chapter8.pdf" target="_blank">基本情報技術者Chapter8</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者Chapter9_1.pdf" target="_blank">基本情報技術者Chapter9_part1</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者Chapter9_2.pdf" target="_blank">基本情報技術者Chapter9_part2</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者Chaptrer11.pdf" target="_blank">基本情報技術者Chapter11</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者Chapter12_1.pdf" target="_blank">基本情報技術者Chapter12_part1</a></li>
+											<li><a href="./file/kihon_jouho/基本情報技術者Chapter12_2.pdf" target="_blank">基本情報技術者Chapter12_part2</a></li>
+											<li><a href="./file/kihon_jouho/math_lesson1.pdf" target="_blank">数学講座1</a></li>
+										</ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-------------------- HTMLとCSS -------------------->                     
+                        <section class="html-and-css">
+                            <h3>HTMLとCSS</h3>
+
+                            <div class="contents">
+
+                                <div class="content01">
+                                    <h4>完成イメージの確認</h4>
+                                    <div class="container">
+                                        <p>まずは、ウェブ制作チュートリアルに沿ってウェブページを作ってみましょう。</p>
+
+                                        <p>今回作るのはこのようなページです！</p>
+
+                                        <a href="http://www.htmq.com/tutorial/sample/30/" class="extarnal" target="_blank">サンプルサイト</a>
+
+                                        <img src="./images/websample.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content02">
+                                    <h4>制作をはじめる前に</h4>
+                                    <div class="container">
+                                        <p>
+                                            制作をはじめる前に、こちらの２つの説明を見てみましょう。<br>
+                                            すでに知っている方は飛ばして結構です。
+                                        </p>
+                                        <ul class="links">
+                                            <li>
+                                                <a href="http://www.htmq.com/htmlkihon/" target="_blank">HTMLの基本</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.htmq.com/csskihon/" target="_blank">CSSの基本</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="content03">
+                                    <h4>ウェブページを作ってみよう</h4>
+                                    <div class="container">
+                                        <p>
+                                            HTMLとCSSについてざっくりと理解出来たら、制作開始です！<br>
+                                            以下の説明を見ながらウェブサイトを作ってみましょう。
+                                        </p>
+                                        <ul class="links">
+                                            <li>
+                                                <a href="http://www.htmq.com/tutorial/" target="_blank">ウェブ制作チュートリアル</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="content04">
+                                    <h4>アレンジを加えてみよう</h4>
+                                    <div class="container">
+                                        <p>ページが完成したら、自分なりのアレンジを加えてみましょう！</p>
+                                        <div class="example">
+                                            <h5>アレンジの例</h5>
+                                            <ul>
+                                                <li>
+                                                    <p>文字の色を変えてみましょう</p>
+                                                </li>
+                                                <li>
+                                                    <p>見出しの背景色を変えてみましょう</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content05">
+                                    <h4>さらに学びたい方向け</h4>
+                                    <div class="container">
+                                        <p>興味がある方は、以下のサイトでさらに学習を進めてみましょう。</p>
+                                        <ul class="links">
+                                            <li>
+                                                <a href="https://saruwakakun.com/html-css/basic" target="_blank">サルワカ</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://webukatu.com/wordpress/blog/category/webukatu_study/html%E3%83%BBcss%E9%AC%BC%E7%B7%B4/" target="_blank">鬼練</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-------------------- プログラミングで人生の可能性を広げよう -------------------->
+                        <section class="programming">
+                            <h3>プログラミングで人生の可能性を広げよう</h3>
+
+                            <div class="contents">
+
+                                <div class="content01">
+                                    <h4>プログラミング学習サイト</h4>
+                                    <div class="container">
+                                        <ul class="links">
+                                            <p></p>
+                                            <li>
+                                                <a href="https://dotinstall.com/" target="_blank">ドットインストール</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://prog-8.com/users/sign_in" target="_blank">Progate (プロゲート)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="content02">
+                                    <h4>エディタをインストールしてみよう</h4>
+                                    <div class="container">
+                                        <p>
+                                            「Brackets」をダウンロードしてみましょう
+                                        </p>
+                                        <ul class="links">
+                                            <li>
+                                                <a href="https://brackets.softonic.jp/" target="_blank">Brackets ダウンロードページ</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://brackets.softonic.jp/support" target="_blank">ダウンロードが確認できない場合</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="content03">
+                                    <h4>つまずいたら調べてみましょう</h4>
+                                    <div class="container">
+                                        <p>
+                                            学習でつまずいたら、調べてみましょう
+                                        </p>
+                                        <ul class="links">
+                                            <li>
+                                                <a href="https://saruwakakun.com/" target="_blank">サルワカ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-------------------- テレワークに備えて -------------------->
+                        <section class="remote-work">
+                            <h3>テレワークに備えて</h3>
+
+                            <div class="contents">
+
+                                <div class="content01">
+                                    <h4>Zoomアプリを使ってみよう</h4>
+                                    <div class="container">
+                                        <ul class="links">
+                                            <p>Zoomアプリをダウンロードしてみましょう</p>
+                                            <li>
+                                                <a href="http://caresystem.g1.xrea.com/CHIBAroots/PDF/How%20to%20download%20and%20update%20the%20appZoom.pdf" target="_blank">Zoomのダウンロード</a>
+                                            </li>
+                                            <br>
+                                            <p>Zoomが初めての方はこちら</p>
+                                            <li>
+                                                <a href="http://caresystem.g1.xrea.com/CHIBAroots/PDF/ZOOM%20interview%20flow..pdf" target="_blank">Zoom　初めての方への　説明</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="content02">
+                                    <h4>在宅支援を利用する方へ</h4>
+                                    <div class="container">
+										<a href="http://caresystem.g1.xrea.com/CHIBAroots/PDF/How%20to%20start%20home%20support.pdf" target="_blank">【在宅支援を始める方に】</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-------------------- IT関連の資格 -------------------->
+                        <section class="remote-work">
+                            <h3>IT関連の資格</h3>
+
+                            <div class="contents">
+
+                                <div class="content01">
+                                    <h4>IT関連の資格</h4>
+                                    <div class="container">
+                                        <ul class="links">
+                                            <p>IT関連の資格には以下のようなものがあります</p>
+											<li><a href="https://www3.jitec.ipa.go.jp/JitesCbt/html/about/about.html" target="_blank">ITパスポート＜iパス＞（国家試験）</a></li>
+											<li><a href="https://www.jitec.ipa.go.jp/" target="_blank">基本情報技術者試験</a></li>
+											<li><a href="https://mos.odyssey-com.co.jp/index.html" target="_blank">マイクロソフト　オフィス　スペシャリスト（MOS）</a></li>
+											<li><a href="https://www.ruby.or.jp/ja/certification/examination/" target="_blank">Ruby技術者認定試験について</a></li>
+											<li><a href="https://newtongym8.com/rank-it" target="_blank">「ＩＴ・情報系資格」の難易度ランキング</a></li>
+											<li><a href="https://linuc.org/linuc1/range/" target="_blank">LinuCレベル1Version 10.0</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-------------------- 上級編 -------------------->
+                        <section class="remote-work">
+                            <h3>上級編</h3>
+
+                            <div class="contents">
+
+                                <div class="content01">
+                                    <h4>上級編</h4>
+                                    <div class="container">
+                                        <ul class="links">
+											<li><a href="https://excel-ubara.com/" target="_blank">Excelの神髄</a></li>
+											<li><a href="http://tallercolibri.com/" target="_blank">コボル入門</a></li>
+											<li><a href="https://www.udemy.com/course/java_spring_beginner/?utm_source=adwords-learn&utm_medium=udemyads&utm_campaign=DSA_WebIndex_la.JA_cc.JP&utm_content=deal4584&utm_term=_._ag_89101504074_._ad_511456312003_._de_c_._dm__._pl__._ti_dsa-454026085647_._li_1009247_._pd__._&gclid=CjwKCAjw07qDBhBxEiwA6pPbHuN5fU0x4jDiBRKsOBULX3QXA3Uu9iRO6fQbL1B9IAgNxXDuZAOlAhoC1TYQAvD_BwE" target="_blank">Spring入門</a></li>
+											<li><a href="https://docs.djangoproject.com/ja/3.2/intro/tutorial01/" target="_blank">はじめての Django アプリ作成</a></li>
+											<li><a href="https://youtu.be/zvXxN3zwkOM" target="_blank">RPA Robo-Patを使って、Excelで作成された会計データを<br>会計ソフト（PCA会計）に転記する</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-------------------- 就活編～履歴書・職務経歴書～ -------------------->
+                        <section class="remote-work">
+                            <h3>就活編～履歴書・職務経歴書～</h3>
+
+                            <div class="contents">
+
+                                <div class="content01">
+                                    <h4>各種就活サイトの職務経歴書</h4>
+                                    <div class="container">
+                                        <ul class="links">
+											<li><a href="https://www.r-agent.com/guide/article3148/" target="_blank">テンプレートダウンロード</a></li>
+											<li><a href="https://doda.jp/guide/syokureki/download.html" target="_blank">dodaテンプレートダウンロード</a></li>
+											<li><a href="https://enagent.com/first-time/know-how/job-career/" target="_blank">エン・ジャパン</a></li>
+											<li><a href="https://forms.gle/jEtr4wxFYQUAaQux5" target="_blank">【就労に向けたアンケート】</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <!-------------------- 在宅支援をご利用の方へ -------------------->
+                        <section class="remote-work">
+                            <h3>在宅支援をご利用の方へ</h3>
+
+                            <div class="contents">
+
+                                <div class="content01">
+                                    <h4>在宅支援について</h4>
+                                    <div class="container">
+                                        <p>就労移行支援での在宅支援は、特に IT 業界を目指す人にとってとても魅力的な支援方法です。</p>
+                                        <p>コロナ感染の収束が見えない中、企業も「テレワーク推進」をしています。</p>
+                                        <p>このチャンスに苦手意識を振り払い！<span>在宅バッチリ派</span>になっちゃいましょう！！</p>
+                                        <img src="./images/remote-work_01.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content02">
+                                    <h4>ルール①  連絡をしよう</h4>
+                                    <div class="container">
+                                        <p>以下のタイミングで、LINEから連絡をお願いいたします。</p>
+                                        <ul class="line-schedule">
+                                            <li>
+                                                <span>開始連絡</span>
+                                                <p>作業開始時に、体調と学習予定内容などをお知らせください</p>
+                                            </li>
+                                            <li>
+                                                <span>休憩連絡</span>
+                                                <p>休憩に入る前に、休憩時間の連絡をお願いいたします</p>
+                                            </li>
+                                            <li>
+                                                <span>再開連絡</span>
+                                                <p>作業再会時に、体調と学習予定内容などをお知らせください</p>
+                                            </li>
+                                            <li>
+                                                <span>終了連絡</span>
+                                                <p>作業終了時に、午後の体調と学習内容などをお知らせください</p>
+                                            </li>
+                                        </ul>
+                                        <p>その他、お困りごとがあればいつでもご連絡ください！</p>
+                                    </div>
+                                </div>
+
+                                <div class="content03">
+                                    <h4>ルール②  作業の報告をしよう</h4>
+                                    <div class="container">
+                                        <p>毎日、作業終了時に振り返りシートを提出してください。</p>
+                                        <a href="form.php" target="_blank">振り返りシートの入力・送信はこちらから</a>
+                                    </div>
+                                </div>
+
+                                <div class="content04">
+                                    <h4>ルール③  リフレッシュしよう</h4>
+                                    <div class="container">
+                                        <p>在宅で机に座りっぱなしだと行き詰ることもあります。</p>
+                                        <p>適切に、肩回しや深呼吸などや、状況によっては散歩などを取り入れてリフレッシュしてくださいね♡</p>
+                                        <img src="./images/remote-work_02.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content05">
+                                    <h4>Zoom面談について</h4>
+                                    <div class="container">
+                                        <p>在宅支援における定例面談をZoomで行うことがあります。<br>ご自宅のPCにダウンロードいただけると幸いです。</p>
+                                        <ul class="links">
+                                            <li>
+                                                <a href="http://caresystem.g1.xrea.com/CHIBAroots/PDF/How%20to%20download%20and%20update%20the%20appZoom.pdf" target="_blank">Zoomアプリのダウンロード方法はこちらから</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message">
+                <p>就労までの道のりをこころより応援いたします。</p>
+            </div>
+        </main>
+
+        <footer class="clearfix">
+            <small>
+                Copyright <span class="copy">&copy;</span> 2022 就労移行ITスクール
+            </small>
+            <button class="page-top"></button>
+        </footer>
+    </div>
+
+    <script>
+        $('input[name="tab_radio"]').change(function(){
+            checkRadiobtn();
+        })
+
+        function checkRadiobtn(){
+            let section_no = $('input[name="tab_radio"]:checked').val();
+            $('section').css('display','none');
+            $('section:nth-child(' + section_no + ')').css('display','block');
+        }
+
+        $(function() {
+            const page_top = $('.page-top');
+
+
+            page_top.click(function() {
+                console.log(page_top);
+                $('body, html').animate({scrollTop: 0}, 600);
+                return false;
+            });
+        });
+
+        $(window).scroll(function() {
+            let scroll = $(window).scrollTop();
+            let screen_width = $(window).width();
+
+            if(screen_width > 599 && scroll >= 1){
+                $('header').addClass('scroll');
+            } else {
+                $('header').removeClass('scroll');
+            }
+        });
+    </script>
+</body>
+</html>

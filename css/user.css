@@ -1,0 +1,412 @@
+/********** メインコンテンツ **********/
+
+main {
+    max-width: 980px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+main a {
+    color: #4E8CC1;
+    text-decoration: underline;
+    transition: opasity 0.2s ease 0s;
+}
+
+main a:hover {
+    opacity: 0.75;
+}
+
+/********** 利用者の方へ **********/
+
+.notification {
+    border:1px solid #A7374A;
+    padding:12px;
+}
+
+.notification p{
+    margin:10px;
+}
+
+.attention {
+    margin-top: 20px;
+}
+
+.attention h2 {
+    color: #58a765;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 20px;
+    /* background-image: url(../images/attention.png); */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.attention h2::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 4px, #e2f0cf 4px, #e2f0cf 8px );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.attention li {
+    margin-top: 20px;
+    padding: 5px 0 0 55px;
+    position: relative;
+}
+
+.attention li::before {
+    color: #c3df98;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+}
+
+.attention li:nth-child(1)::before {
+    content: '1.';
+}
+.attention li:nth-child(2)::before {
+    content: '2.';
+}
+
+.attention .after-note a {
+    color: #84c428;
+    margin-top: 15px;
+    text-decoration: underline;
+    display: block;
+    transition: opasity 0.2s ease 0s;
+}
+
+.attention .after-note a:hover {
+    opacity: 0.8;
+}
+
+.attention .after-note p {
+    color: #888;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/********** 学習コンテンツ全体 **********/
+
+.study-contents {
+    margin-top: 60px; 
+}
+
+.study-contents h2 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    position: relative;
+    background-color: #B9D1E6;
+}
+
+.study-contents .flex-container {
+    margin-top: 15px;
+    display: flex;
+}
+
+/* ナビゲーション (左カラム) */
+
+#menu {
+    border-right: 1px solid #c4c1bc;
+    flex-direction:column;
+    flex: 0;
+}
+
+#menu h3 {
+    color: #6397c6;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#menu input[type="radio"] {
+    display: none;
+}
+
+#menu label {
+    min-width: 245px;
+    padding: 15px 15px 5px 30px;
+    color: #888;
+    display: block;
+    position: relative;
+}
+
+#menu label:hover {
+    color: #6397c6;   
+}
+
+#menu input:checked + label::before {
+   content: '';/*何も入れない*/
+    display: inline-block;/*忘れずに！*/
+    width: 9px; /*画像の幅*/
+    height: 12px; /*画像の高さ*/
+    background-image: url(../images/index_arrow.png);
+    background-size: contain;
+    position: absolute;
+    top: 23px;
+    left: 10px;
+}
+
+#menu input:checked + label {
+    color: #4989bf;
+    /* padding-bottom: 0; */
+}
+
+#menu ol {
+    display: none;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+#menu ol li {
+    color: #888;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#menu input:checked + label + ol {
+    display: block;
+}
+
+/* メインコンテンツ共通 (右カラム) */
+
+/* 全体 */
+
+.study-contents section h2 {
+    color: #6397c6;
+}
+
+.study-contents .main-contents {
+    padding: 0 10px 25px 10px;
+    flex-grow: 1;
+}
+
+.study-contents section .contents:first-of-type {
+    padding: 0 10px;
+    margin-top: 30px;
+}
+
+.study-contents section .bold {
+   font-weight: bold;
+}
+
+/* 見出し */
+
+.study-contents section h3 {
+    color: #6397c6;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px 12px 10px;
+    border-bottom: 2px solid #b9d1e6;
+}
+
+.study-contents section h4 {
+    color: #4989bf;
+    font-weight: bold;
+    background-size: auto auto;
+    background-color: rgba(236, 242, 246, 1);
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, rgba(228, 237, 243, 1) 6px, rgba(228, 237, 243, 1) 12px );
+    padding: 12px 18px;
+    position: relative;
+}
+
+.study-contents section h4::before {
+    content: '';
+    width: 5px;
+    height: 100%;
+    background-color: #6397c6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* コンテンツ */
+
+.study-contents .container {
+    padding: 24px 10px 40px 10px;
+    position: relative;
+}
+
+/* .study-contents .container p:not(:first-of-type) {
+    margin-top: 30px;
+} */
+
+/* リンク */
+
+.study-contents .links {
+    margin-top: 30px;   
+}
+
+.study-contents .links li {
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+    position: relative;
+}
+
+/* .study-contents .links li:not(:first-of-type){
+    margin-top: 18px;
+} */
+
+.study-contents .links li a {
+    margin-left: 20px;
+}
+
+.study-contents .links li::before {
+    content: '●';
+    color: #4E8CC1;
+    font-size:8px;
+    position: absolute;
+    top: 5px;
+    left: 22px;
+}
+
+/* メインコンテンツ個別 (右カラム) */
+
+
+/* ---------- HTMLとCSS ----------*/
+
+.html-and-css .content01 a {
+    padding-left: 28px;
+    margin-top: 28px;
+    display: block;
+    position: relative;
+}
+
+.html-and-css .content01 a::before {
+    content: '\f08e';
+    color: #4e8cc1;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    position: absolute;
+    top: 51%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.html-and-css .content01 img {
+    width: 340px;
+    margin-top: 20px;
+    display: block;
+}
+
+.html-and-css .content04 .example {
+    margin-top: 30px;
+}
+
+.html-and-css .content04 h5 {
+    padding: 4px 10px;
+    background-color: #ebf2f7;
+    display: inline-block;
+    position: relative;
+}
+
+.html-and-css .content04 h5::after {
+    content: '';
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width: 18px 0 18px 16px;
+    border-color: transparent transparent transparent #ebf2f7;
+    position: absolute;
+    top: 0;
+    right: -16px;;
+}
+
+.html-and-css .content04 .example ul {
+    margin-top: 25px;
+}
+
+.html-and-css .content04 .example ul li {
+    padding-left: 30px;
+    position: relative;
+}
+
+.html-and-css .content04 .example ul li:not(:first-of-type) {
+    margin-top: 18px;
+}
+
+.html-and-css .content04 .example ul li::before {
+    content: '●';
+    color: #c3c3c3;
+    font-size:6px;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+
+/* ---------- 在宅支援をご利用の方へ ----------*/
+
+.remote-work .content01 p:nth-child(1) { width: 85%; }
+.remote-work .content01 p:nth-child(2) { width: 73%; }
+.remote-work .content01 p:nth-child(3) { width: 69%; }
+ 
+.remote-work .content01 img {
+    width: 23.5%;
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+}
+
+.remote-work .content02 .line-schedule {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-left: 4px solid #d6e9ba;
+}
+
+.remote-work .content02 .line-schedule li {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.remote-work .content02 .line-schedule li:not(:first-of-type) {
+    margin-top: 18px;
+}
+
+.remote-work .content02 .line-schedule li span {
+    color: #fff;
+    background-color: #a8d567;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+.remote-work .content02 .line-schedule li p {
+    color: #888;
+    margin-left: 15px;
+}
+
+.remote-work .content03 a {
+    color: #84c428;
+    margin-top: 20px;
+    display: block;
+}
+
+.remote-work .content04 p:nth-child(2) {
+    width: 66%;
+}
+
+.remote-work .content04 img {
+    width: 18%;
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+}
+
+/* メッセージ */
+
+.message {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.message p {
+    font-size: 20px;
+    color: #f9b5a7;
+}

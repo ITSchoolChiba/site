@@ -1,0 +1,403 @@
+/********** メインコンテンツ **********/
+
+main {
+    max-width: 860px;
+    padding: 0 10px 50px 10px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/********** 体験・見学される方へ **********/
+
+.attention {
+    margin-top: 20px;
+}
+
+.attention h2 {
+    color: #58a765;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 20px;
+    background-image: url(../images/attention.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.attention h2::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 4px, #e2f0cf 4px, #e2f0cf 8px );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.attention li {
+    margin-top: 20px;
+    padding: 5px 0 0 55px;
+    position: relative;
+}
+
+.attention li::before {
+    color: #c3df98;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+}
+
+.attention li:nth-child(1)::before {
+    content: '1.';
+}
+.attention li:nth-child(2)::before {
+    content: '2.';
+}
+.attention li:nth-child(3)::before {
+    content: '3.';
+}
+
+.attention .after-note a {
+    color: #84c428;
+    margin-top: 15px;
+    text-decoration: underline;
+    display: block;
+    transition: opasity 0.2s ease 0s;
+}
+
+.attention .after-note a:hover {
+    opacity: 0.8;
+}
+
+.attention .after-note p {
+    color: #888;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/********** 体験の流れ **********/
+
+.flow {
+    margin-top: 55px;
+}
+
+.flow .contents {
+    padding: 25px 20px 0 20px;;
+}
+
+.flow h2 {
+    color: #68b074;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: 1px solid #c1e18e;
+    border-radius: 4px;
+}
+
+.flow img {
+    margin-top: 20px;
+    transform: translateX(-20px);
+}
+
+
+/********** 体験内容 **********/
+
+main .traial-section {
+    margin-top: 50px;
+}
+
+.traial-section h2 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    position: relative;
+}
+
+/* 見出し背景色 */
+
+.traial01 h2, .traial02 h2 {
+    background-color: #B9D1E6;
+}
+
+.break-time h2 {
+    background-color: #f4c8bd;
+}
+
+.look-back h2 {
+    background-color: #c8bfe0;
+}
+
+.traial01 h2::before, .traial02 h2::before {
+    content: '';
+    width: 2px;
+    height: 25px;
+    background-color: #FFF;
+    position: absolute;
+    left: 90px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.traial01 h2 span, .traial02 h2 span {
+    padding-left: 30px;
+}
+
+.traial-section .contents {
+    padding: 32px 20px 0 20px;
+}
+
+.traial-section .contents .content:not(:first-of-type){
+    margin-top: 40px;
+}
+
+.traial-section .contents p:not(:first-of-type){
+    margin-top: 30px;
+}
+
+.traial-section .content .link a {
+    color: #4E8CC1;
+    text-decoration: underline;
+    transition: opasity 0.2s ease 0s;
+}
+
+.traial-section .content .link a:hover {
+    opacity: 0.75;
+}
+
+
+
+/* リンク */
+
+.traial-section .link li {
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+    margin-top: 20px;
+    position: relative;
+}
+
+.traial-section .link li::before {
+    content: '';/*何も入れない*/
+    display: inline-block;/*忘れずに！*/
+    width: 9px; /*画像の幅*/
+    height: 12px; /*画像の高さ*/
+    background-image: url(../images/arrow_blue.png);
+    background-size: contain;
+}
+
+.traial-section .link a {
+    color: #4989BF;
+    margin-left: 6px;
+    text-decoration: underline;
+}
+
+/* 注意・ヒント */
+
+.notion, .hint {
+    color: #888;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 30px;
+    position: relative;
+    padding-left: 43px;
+}
+
+.notion {
+    background-size: auto auto;
+    background-color: rgba(252, 248, 245, 1);
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, rgba(252, 244, 241, 1) 6px, rgba(252, 244, 241, 1) 12px );
+    border: 1px solid #FFEAE4;
+}
+
+.hint {
+    background-size: auto auto;
+    background-color: rgba(237, 245, 243, 1);
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, rgba(232, 243, 241, 1) 6px, rgba(232, 243, 241, 1) 12px );
+    border: 1px solid #d7ebea;
+}
+
+.notion::before {
+    content: '\f06a';
+    color: #ffb9a6;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.hint::before {
+    content: '';/*何も入れない*/
+    display: inline-block;/*忘れずに！*/
+    width: 25px; /*画像の幅*/
+    height: 25px; /*画像の高さ*/
+    background-image: url(../images/hint_icon.png);
+    background-size: contain;
+    position: absolute;
+    left: 9px;
+    top: 8px;
+}
+
+
+/* ボタン */
+
+section button {
+    color: #FFF;
+    display: block;
+    margin-top: 20px;
+}
+
+section button a::after {
+    content: '\f304';
+    color: #FFF;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    transition: background-color 0.2s ease 0s;
+}
+
+section button a {
+    padding: 10px 45px 10px 17px;
+    border-radius: 7px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.health-check button a {
+    background-color: #b2d6db;
+}
+
+.health-check button a:hover {
+    background-color: #95c3c9;
+}
+
+.look-back button a {
+    background-color: #cdc5e3;
+}
+
+.look-back button a:hover {
+    background-color: #c8bfe0;
+}
+
+
+/********** コンテンツ別 **********/
+
+/* 健康チェック */
+
+.health-check {
+    padding: 20px;
+    border-radius: 5px;
+    
+    /* 破線 */
+    background-image :
+    linear-gradient(to right, #aad2d7, #aad2d7 5px, transparent 4px, transparent 10px),  /* 上の線 */
+    linear-gradient(to bottom, #aad2d7, #aad2d7 5px, transparent 4px, transparent 10px), /* 右の線 */
+    linear-gradient(to left, #aad2d7, #aad2d7 5px, transparent 4px, transparent 10px),  /* 下の線 */
+    linear-gradient(to top, #aad2d7, #aad2d7 5px, transparent 4px, transparent 10px);   /* 左の線 */
+  background-size:
+    10px 2px,  /* 上の線 */
+    2px 10px, /* 右の線 */
+    10px 2px,  /* 下の線 */
+    2px 10px;   /* 左の線 */
+  background-position:
+    left top,  /* 上の線 */
+    right top, /* 右の線 */
+    right bottom,  /* 下の線 */
+    left bottom;   /* 左の線 */
+  background-repeat:
+    repeat-x,  /* 上の線 */
+    repeat-y, /* 右の線 */
+    repeat-x,  /* 下の線 */
+    repeat-y;   /* 左の線 */
+}
+
+.health-check h3 {
+    color: #95c3c9;
+    font-weight: bold;
+    padding-left: 32px;
+    position: relative;
+}
+
+.health-check h3::before {
+    content: '\f21e';
+    color: #f5cdc3;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+    
+
+.health-check p {
+    color: #888;
+    margin-top: 20px;
+}
+
+/* 体験2 リスト */
+
+.traial02 ol {
+    margin-top: 30px;
+}
+
+.traial02 ol li {
+    color: #888;
+    position: relative;
+    display: flex;
+}
+
+.traial02 ol li:not(:first-of-type){
+    margin-top: 15px;
+}
+
+.traial02 ol li .material-icons {
+    color: #b9d1e6;
+    font-size: 30px;
+}
+
+.traial02 ol li p {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+/* お疲れ様でした リスト */
+
+.look-back .items li {
+    margin-top: 30px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.look-back .items li::before {
+    content: '';/*何も入れない*/
+    display: inline-block;/*忘れずに！*/
+    width: 9px; /*画像の幅*/
+    height: 12px; /*画像の高さ*/
+    background-image: url(../images/arrow_purple.png);
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+/* メッセージ */
+
+.message {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.message p {
+    font-size: 20px;
+    color: #f9b5a7;
+}

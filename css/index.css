@@ -1,0 +1,175 @@
+/********** メインコンテンツ **********/
+
+main {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.col{
+    width:100%;
+}
+
+main .col {
+    width: 50%;
+}
+
+
+.content-box {
+    width: 87%;
+    background-color: #FFF;
+    padding: 15px 10px;
+    margin: 30px auto;
+    border: 1px solid #58A765;
+    border-radius: 10px;
+    box-shadow: 2px 5px #8AC193;
+}
+
+.content-box h2 {
+    color: #58A765;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3px 10px 10px 52px;
+    border-bottom: 1px solid #58A765;
+    position: relative;
+}
+
+.content-box h2 .material-icons-round {
+    color: #8AC193;
+    font-size: 34px!important;  /* Preferred icon size */
+    position: absolute;
+    top: -3px;
+    left: 10px;
+}
+
+.content-box .content {
+    padding: 25px 20px 20px 20px;
+}
+
+.content-box .content p {
+    line-height: 28px;
+} 
+
+.content-box a {
+    color: #4E8CC1;
+    text-decoration: underline;
+    transition: opasity 0.2s ease 0s;
+}
+
+.content-box a:hover {
+    opacity: 0.75;
+}
+
+
+/********** コンテンツ別 **********/
+
+/* タイピング練習 */
+
+ h3 {
+    background: #ebf3fa;
+    color: #888;
+    font-size: 14px;
+    margin: 30px 0 15px 0;
+    padding: 7px 10px; 
+    display: inline-block;
+    border-radius: 4px;
+}
+
+/* 書籍リクエスト */
+
+.book-request a {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* 就労先一例 */
+
+.work-place ul {
+    margin-top: 20px;
+}
+
+/* タイピング練習・就労先一覧 */
+
+.typing li, .work-place li {
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+    position: relative;
+}
+
+.typing li::before, .work-place li::before {
+    content: '●';
+    color: #4E8CC1;
+    font-size:8px;
+    position: absolute;
+    top: 5px;
+    left: 22px;
+}
+
+.typing li a, .work-place li a {
+    line-height: 1.4;
+    margin-left: 20px;
+}
+
+.typing li:not(:first-of-type),
+.work-place li:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+/* 住所 */
+
+.address h3 {
+    background: #ebf3fa;
+    color: #888;
+    font-size: 14px;
+    margin: 30px 0 15px 0;
+    padding: 7px 10px; 
+    display: inline-block;
+    border-radius: 4px;
+}
+
+/* 各種SNS */
+
+.sns .links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sns .links li {
+    width: 100%;
+}
+
+.sns a {
+    height: 26px;
+    padding-left: 35px;
+    margin-top: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.sns a i {
+    opacity: 0.8;
+    position: absolute;
+}
+
+.fa-twitter   { top:-5px; left: 0; font-size: 28px; }
+.fa-instagram { top:-5px; left: -2.5px; font-size: 32px; }
+.fa-desktop   { top:-3px; left: 0; font-size: 24px; }
+
+
+
+/********** ▽ これ以下レスポンシブ対応 **********/
+
+@media (max-width: 599px){
+    main {
+        flex-direction: column;
+        padding-bottom: 16vw;
+    }
+    main .col {
+        width: 100%;
+    }
+    .content-box {
+        width: calc(100% - 30px);
+    }
+    .col-left .content-box:last-of-type {
+        margin-bottom: 0;
+    }
+}
